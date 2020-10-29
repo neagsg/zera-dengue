@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Local</title> 
+</head>
+<body>
+  <header>
+    <h2>Denúncia</h2>
+  </header>
+  <main>
+    <section class="form">
+      <h2>Faça sua denúncia</h2>
+      <form action="/descriptions" method="POST">
+        <label class="file-chooser">
+          <input
+          type="file"
+          name="select-img"
+          >
+          <img src="../assets/camera.svg" class="preview-img" />
+        </label>
+        <input
+          type="text"
+          placeholder="Endereço da ocorrência (obrigatório)"
+          name="address"
+        >
+        
+        <input
+          type="text"
+          placeholder="Descrição e relato (obrigatório)"
+          name="description"
+        >
+        <button type="submit">Concluir</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
